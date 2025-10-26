@@ -9,5 +9,5 @@ public interface IUsuarioService {
     public List<Usuario> findAll();
     public Usuario save(Usuario usuario);
     public Optional<Usuario> findById(Integer id);
-    public void deleteById(Integer id); 
+
 }

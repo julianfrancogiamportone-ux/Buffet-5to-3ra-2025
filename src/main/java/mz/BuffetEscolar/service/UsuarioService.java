@@ -5,7 +5,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import mz.BuffetEscolar.entity.Usuario;
-import mz.BuffetEscolar.Repository.UsuarioRepository;
+import mz.BuffetEscolar.repository.UsuarioRepository;
 
 @Service
 public class UsuarioService implements IUsuarioService {
@@ -26,10 +26,5 @@ public class UsuarioService implements IUsuarioService {
     @Override
     public Optional<Usuario> findById(Integer id) {
         return repository.findById(id);
-    }
-
-    @Override
-    public void deleteById(Integer id) {
-        repository.deleteById(id);
     }
 }
