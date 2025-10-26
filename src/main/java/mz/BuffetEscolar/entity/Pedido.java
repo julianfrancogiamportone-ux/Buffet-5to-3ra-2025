@@ -1,16 +1,10 @@
 package mz.BuffetEscolar.entity;
 
 import java.util.Date;
-import java.util.List;
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
@@ -28,15 +22,13 @@ public class Pedido {
 
     private double total;
 
-    @ManyToOne(fetch = FetchType.LAZY) 
-    @JoinColumn(name = "id_usuario") 
-    private Usuario usuario;
-
-    @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
-    private List<DetallePedido> detalles;
+    // Campo para saber qué usuario hizo el pedido, sin necesitar la clase Usuario.
+    private Integer idUsuario; 
 
     public Pedido() {
     }
+
+    // --- Getters y Setters ---
 
     public Integer getIdPedido() {
         return idPedido;
@@ -62,19 +54,11 @@ public class Pedido {
         this.total = total;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
+    public Integer getIdUsuario() {
+        return idUsuario;
     }
 
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-
-    public List<DetallePedido> getDetalles() {
-        return detalles;
-    }
-
-    public void setDetalles(List<DetallePedido> detalles) {
-        this.detalles = detalles;
+    public void setIdUsuario(Integer idUsuario) {
+        this.idUsuario = idUsuario;
     }
 }
