@@ -30,4 +30,10 @@ public class FacturaService implements IFacturaService {
         return repository.findById(id);
         
     }
+
+	@Override
+	public Factura save1(Factura factura) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

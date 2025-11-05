@@ -19,7 +19,7 @@ public class Factura {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
    
-    @JoinColumn(name = "pedido_id")
+    //@JoinColumn(name = "pedido_id")
     private Pedido pedido; 
 
     private BigDecimal total; 
