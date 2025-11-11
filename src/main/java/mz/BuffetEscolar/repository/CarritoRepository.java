@@ -1,5 +1,10 @@
 package mz.BuffetEscolar.repository;
 
-public class CarritoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import mz.BuffetEscolar.entity.carrito;
+
+public interface CarritoRepository extends JpaRepository<carrito, Long> {
 
 }
+
