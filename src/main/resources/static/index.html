@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda ECMZ</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <a href="#" data-enlace="pagina-principal" class="logo-link">
+                <img src="images/mz.png" alt="Logo MZ" class="logo">
+            </a>
+            <a href="#" data-enlace="web-colegio" class="logo-link">
+                <img src="images/ecmz.png" alt="LogoEcmz" class="Logo">
+            </a>
+        </div>
+        <div class="header-actions">
+            <span id="icono-usuario" class="user-icon">👤</span>
+            <a href="#" id="enlace-icono-carrito" class="cart-icon" data-enlace="carrito">
+                🛒
+            </a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <section id="pagina-principal" class="page active">
+            <h2 class="section-title">Buffet Zapata</h2>
+            <div class="main-links-container">
+                <a href="#" class="main-link" data-enlace="menu-semanal">
+                    <div class="main-link-box">
+                        <h3>Menú semanal</h3>
+                        <img src="images/menudeldia.png" alt="Menú del Día" class="main-link-image">
+                    </div>
+                </a>
+                <a href="#" class="main-link" data-enlace="comida-recreo">
+                    <div class="main-link-box">
+                        <h3>¡Pedí tu comida antes del recreo!</h3>
+                        <img src="images/recreo.png" alt="Pedí tu comida antes del recreo" class="main-link-image">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="web-colegio" class="page hidden">
+            <a href="#" class="back-link-global" data-enlace="pagina-anterior"><span>◀</span> Volver</a>
+            <h2 class="section-title">¡Visítanos!</h2>
+            <div class="info-container">
+                <p>Te dejamos la <a href="https://mzapata.uncuyo.edu.ar/" target="_blank" class="info-link">página web</a> del colegio por cualquier duda.</p>
+            </div>
+        </section>
+        <section id="vouchers" class="page hidden">
+            <a href="#" class="back-link-global" data-enlace="pagina-anterior"><span>◀</span> Volver</a>
+            <h2 class="section-title">Vouchers</h2>
+            <div class="info-container">
+                <p>¡Al hacer 3 compras mediante la página, nos mostras tu historial y te regalamos un voucher de compra por $3000!</p>
+            </div>
+        </section>
+        <section id="contactanos" class="page hidden">
+            <a href="#" class="back-link-global" data-enlace="pagina-anterior"><span>◀</span> Volver</a>
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="info-container">
+                <p>Nuestro Whatapp para cualquier duda o reclamo: 261 362 2596</p>
+            </div>
+        </section>
+        <section id="informacion" class="page hidden">
+            <a href="#" class="back-link-global" data-enlace="pagina-anterior"><span>◀</span> Volver</a>
+            <h2 class="section-title">Información</h2>
+            <div class="info-container">
+                <p>Página web institucional del Buffet de la Escuela de Comercio Martín Zapata, creada con el fin de facilitar la experiencia de los estudiantes comprandonos, con el objetivo de optimizar sus tiempos, ahorrar grandes filas y evitar que pierdan tiempo de clases.</p>
+            </div>
+        </section>
+        
+        <section id="preguntas-frecuentes" class="page hidden">
+            <a href="#" class="back-link-global" data-enlace="pagina-anterior"><span>◀</span> Volver</a>
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>¿Cómo comprar?</h3>
+                    <p>Para comprar necesitas iniciar sesión, agregar tu producto al carrito y luego elegir el método de pago.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Métodos de pago</h3>
+                    <p>Podés pagar con Mercado Pago, tarjeta o efectivo a la hora de retirar.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Cómo retirar?</h3>
+                    <p>Al comprar, se genera un código que está a tu nombre, en el recreo vas a la sección de retiros y le das tu código a la persona que atiende.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Qué pasa si en el recreo mi pedido no está listo?</h3>
+                    <p>No es usual que pase, pero si sucede, podes hacer el reclamo a nuestro Whatsapp y te damos un voucher para gastar en otra cosa.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>¿Con cuanto tiempo de antelación debo encargar?</h3>
+                    <p>Si vas a encargar un menú, con al menos 40 minutos de anticipación, si es algo de quiosco, con 10 minutos de antelación.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas" class="page hidden">
+            <a href="#" class="back-link-global" data-enlace="pagina-anterior"><span>◀</span> Volver</a>
+            <h2 class="section-title">Ofertas</h2>
+            <div id="ofertas-container" class="product-cards-container">
+                
+                <div class="product-card" data-product-id="hamburguesa">
+                    <img src="images/hamburguesa.png" alt="Hamburguesa" class="product-image">
+                    <h3 class="product-name">Hamburguesa</h3>
+                    <div class="product-details">
+                        <p class="product-price">$4000</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="pancho">
+                    <img src="images/pancho.png" alt="Pancho" class="product-image">
+                    <h3 class="product-name">Pancho</h3>
+                    <div class="product-details">
+                        <p class="product-price">$1500</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="milanesa">
+                    <img src="images/milanesa.png" alt="Milanesa" class="product-image">
+                    <h3 class="product-name">Milanesa</h3>
+                    <div class="product-details">
+                        <p class="product-price">$6000</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="menu-semanal" class="page hidden">
+            <a href="#" class="back-link-global" data-enlace="pagina-anterior"><span>◀</span> Volver</a>
+            <h2 class="section-title">Menú semanal</h2>
+            <div id="menu-semanal-container" class="product-cards-container">
+                
+                <div class="product-card" data-product-id="fideos">
+                    <img src="images/fideos.png" alt="Fideos con tuco" class="product-image">
+                    <h3 class="product-name">Fideos con tuco</h3>
+                    <div class="product-details">
+                        <p class="product-price">$4000</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="tarta-acelga">
+                    <img src="images/tarta.png" alt="Tarta de acelga" class="product-image">
+                    <h3 class="product-name">Tarta de acelga</h3>
+                    <div class="product-details">
+                        <p class="product-price">$5500</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="canelones">
+                    <img src="images/canelones.png" alt="Canelones caseros" class="product-image">
+                    <h3 class="product-name">Canelones caseros</h3>
+                    <div class="product-details">
+                        <p class="product-price">$6500</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="zapallitos">
+                    <img src="images/zapallitos.png" alt="Zapallitos rellenos" class="product-image">
+                    <h3 class="product-name">Zapallitos rellenos</h3>
+                    <div class="product-details">
+                        <p class="product-price">$4000</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="bombas-papa">
+                    <img src="images/bombadepapa.png" alt="Bombas de papa" class="product-image">
+                    <h3 class="product-name">Bombas de papa</h3>
+                    <div class="product-details">
+                        <p class="product-price">$6500</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="comida-recreo" class="page hidden">
+            <a href="#" class="back-link-global" data-enlace="pagina-anterior"><span>◀</span> Volver</a>
+            <h2 class="section-title">Encargue</h2>
+            <div class="category-links-container">
+                
+                <a href="#" class="category-link" data-enlace="salado">
+                    <div class="category-link-box">
+                        <div class="category-link-image" style="background-image: url('images/salado-categoria.png');"></div>
+                        <h3>Salado</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-link" data-enlace="dulce">
+                    <div class="category-link-box">
+                        <div class="category-link-image" style="background-image: url('images/dulce-categoria.png');"></div>
+                        <h3>Dulce</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-link" data-enlace="menu-semanal">
+                    <div class="category-link-box">
+                        <div class="category-link-image" style="background-image: url('images/menus-categoria.png');"></div>
+                        <h3>Menúes</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-link" data-enlace="bebidas">
+                    <div class="category-link-box">
+                        <div class="category-link-image" style="background-image: url('images/bebidas.png');"></div>
+                        <h3>Bebidas</h3>
+                    </div>
+                </a>
+                <a href="#" class="category-link" data-enlace="vouchers">
+                    <div class="category-link-box">
+                        <div class="category-link-image" style="background-image: url('images/voucher.png');"></div>
+                        <h3>Vouchers</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <section id="salado" class="page hidden">
+            <a href="#" class="back-link-global" data-enlace="pagina-anterior"><span>◀</span> Volver</a>
+            <h2 class="section-title">Salado</h2>
+            <div id="salado-container" class="product-cards-container">
+                
+                <div class="product-card" data-product-id="rex">
+                    <img src="images/rex.png" alt="Galletitas Rex" class="product-image">
+                    <h3 class="product-name">Rex</h3>
+                    <div class="product-details">
+                        <p class="product-price">$1500</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="saladiix">
+                    <img src="images/saladix.png" alt="Galletitas Saladix" class="product-image">
+                    <h3 class="product-name">Saladix</h3>
+                    <div class="product-details">
+                        <p class="product-price">$1800</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="papas-lays">
+                    <img src="images/lays.png" alt="Papas Lays" class="product-image">
+                    <h3 class="product-name">Papas Lays</h3>
+                    <div class="product-details">
+                        <p class="product-price">$2500</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="kesitas">
+                    <img src="images/kesitas.png" alt="Kesitas" class="product-image">
+                    <h3 class="product-name">Kesitas</h3>
+                    <div class="product-details">
+                        <p class="product-price">$1800</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="twistos">
+                    <img src="images/twistos.png" alt="Twistos" class="product-image">
+                    <h3 class="product-name">Twistos</h3>
+                    <div class="product-details">
+                        <p class="product-price">$2200</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="dulce" class="page hidden">
+            <a href="#" class="back-link-global" data-enlace="pagina-anterior"><span>◀</span> Volver</a>
+            <h2 class="section-title">Dulce</h2>
+            <div id="dulce-container" class="product-cards-container">
+                
+                <div class="product-card" data-product-id="oreo">
+                    <img src="images/oreo.png" alt="Galletitas Oreo" class="product-image">
+                    <h3 class="product-name">Oreo</h3>
+                    <div class="product-details">
+                        <p class="product-price">$1800</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="pepitos">
+                    <img src="images/pepitos.png" alt="Galletitas Pepitos" class="product-image">
+                    <h3 class="product-name">Pepitos</h3>
+                    <div class="product-details">
+                        <p class="product-price">$1800</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="chocolinas">
+                    <img src="images/chocolinas.png" alt="Galletitas Chocolinas" class="product-image">
+                    <h3 class="product-name">Chocolinas</h3>
+                    <div class="product-details">
+                        <p class="product-price">$2000</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="don-satur">
+                    <img src="images/donsatur.png" alt="Bizcochos Don Satur" class="product-image">
+                    <h3 class="product-name">Don Satur</h3>
+                    <div class="product-details">
+                        <p class="product-price">$1000</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="formis">
+                    <img src="images/formis.png" alt="Galletitas Formis" class="product-image">
+                    <h3 class="product-name">Formis</h3>
+                    <div class="product-details">
+                        <p class="product-price">$1500</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="bebidas" class="page hidden">
+            <a href="#" class="back-link-global" data-enlace="pagina-anterior"><span>◀</span> Volver</a>
+            <h2 class="section-title">Bebidas</h2>
+            <div id="bebidas-container" class="product-cards-container">
+                
+                <div class="product-card" data-product-id="jugo-baggio">
+                    <img src="images/baggio.png" alt="Jugo Baggio" class="product-image">
+                    <h3 class="product-name">Jugo Baggio</h3>
+                    <div class="product-details">
+                        <p class="product-price">$1200</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="coca-cola">
+                    <img src="images/coca.png" alt="Coca-Cola" class="product-image">
+                    <h3 class="product-name">Coca-Cola</h3>
+                    <div class="product-details">
+                        <p class="product-price">$1800</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="sprite">
+                    <img src="images/sprite.png" alt="Sprite" class="product-image">
+                    <h3 class="product-name">Sprite</h3>
+                    <div class="product-details">
+                        <p class="product-price">$1800</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="fanta">
+                    <img src="images/fanta.png" alt="Fanta" class="product-image">
+                    <h3 class="product-name">Fanta</h3>
+                    <div class="product-details">
+                        <p class="product-price">$1800</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-product-id="choc-c pindor">
+                    <img src="images/cindor.png" alt="Chocolatada Cindor" class="product-image">
+                    <h3 class="product-name">Chocolatada Cindor</h3>
+                    <div class="product-details">
+                        <p class="product-price">$2200</p>
+                        <div class="add-to-cart">
+                            <span class="quantity-control" data-accion="remover">-</span>
+                            <span class="quantity">0</span>
+                            <span class="quantity-control" data-accion="agregar">+</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+       
+        <section id="carrito" class="page hidden">
+            <div class="cart-header">
+                <a href="#" class="back-link" data-enlace="pagina-anterior">
+                    <span>◀</span> Carrito de compras
+                </a>
+                <a href="#" id="btn-vaciar-carrito" class="vaciar-carrito-link">Vaciar carrito</a>
+            </div>
+            <h3 class="cart-section-title">Productos seleccionados</h3>
+            
+            <div id="contenedor-items-carrito"></div>
+
+            <div class="cart-total-container">
+                <p class="cart-total-label">Total:</p>
+                <p id="precio-total-carrito" class="cart-total-price">$0</p>
+            </div>
+
+            <div class="cart-actions">
+                <button class="btn btn-primary">COMPRAR</button>
+                <button class="btn btn-secondary" data-enlace="pagina-principal">Seguir comprando</button>
+            </div>
+        </section> 
+
+    </main> 
+
+    <div id="contenedor-modal" class="modal-container-hidden">
+        <div id="fondo-modal" class="modal-overlay"></div>
+        <div id="modal-login" class="modal-box active">
+            <span class="modal-close-btn">&times;</span>
+            <h3 class="modal-title">Iniciar sesión</h3>
+            <p class="modal-subtitle">Ingresá tu email</p>
+            <form>
+                <input type="email" placeholder="Email" class="form-input">
+                <button id="btn-login" type="button" class="btn btn-primary btn-full-width">Ingresar</button>
+            </form>
+            <a href="#" class="form-link" data-modal-objetivo="modal-crear-cuenta-1">Crear Cuenta</a>
+            <a href="#" class="form-link" data-modal-objetivo="modal-reset-pass">Olvidé mi contraseña</a>
+        </div>
+        <div id="modal-crear-cuenta-1" class="modal-box">
+            <span class="modal-close-btn">&times;</span>
+            <h3 class="modal-title">Crea tu cuenta</h3>
+            <p class="modal-subtitle">Ingresá tu email</p>
+            <form>
+                <input type="email" placeholder="Email" class="form-input">
+                <button type="button" class="btn btn-primary btn-full-width" data-modal-objetivo="modal-crear-cuenta-2">Siguiente</button>
+            </form>
+        </div>
+        <div id="modal-crear-cuenta-2" class="modal-box">
+            <span class="modal-close-btn">&times;</span>
+            <h3 class="modal-title">Crea tu cuenta</h3>
+            <p class="modal-subtitle">Crea tu contraseña</p>
+            <form>
+                <input type="password" placeholder="Contraseña" class="form-input">
+                <button type="button" class="btn btn-primary btn-full-width">Ingresar</button>
+            </form>
+        </div>
+        <div id="modal-reset-pass" class="modal-box">
+            <span class="modal-close-btn">&times;</span>
+            <h3 class="modal-title">Reestablece tu contraseña</h3>
+            <p class="modal-subtitle">Ingresá tu email</con>
+            <form>
+                <input type="email" placeholder="Email" class="form-input">
+                <button type="button" class="btn btn-primary btn-full-width">Reestablecer</button>
+            </form>
+            <a href="#" class="form-link" data-modal-objetivo="modal-login">Volver a Iniciar Sesión</a>
+        </div>
+    </div> 
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Acerca de</h3>
+                <ul>
+                <li><a href="#" data-enlace="informacion">Información</a></li> 
+                <li><a href="#" data-enlace="preguntas-frecuentes">Preguntas frecuentes</a></li>
+                </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Secciones</h3>
+            <ul>
+                <li><a href="#" data-enlace="menu-semanal">Menú semanal</a></li>
+                <li><a href="#" data-enlace="ofertas">Ofertas</a></li>
+                <li><a href="#" data-enlace="pagina-principal">Página principal</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Seguinos</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/mzapatauncuyo/" target="_blank">
+                    <img src="images/Instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/EscuelaMZapataUNCuyo" target="_blank">
+                    <img src="images/Facebook.png" alt="Facebook">
+                </a>
+            </div>
+            <a href="#" data-enlace="contactanos" class="footer-contact-link">Contáctanos</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script> 
+</body>
+</html>

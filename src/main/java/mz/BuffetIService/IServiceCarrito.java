@@ -1,9 +1,9 @@
-package mz.BuffetEscolar.Iservice;
+package mz.BuffetIService;
 
 import java.util.List;
 import java.util.Optional;
 
-import mz.BuffetEscolar.entity.carrito;
+import mz.BuffetEntity.carrito;
 
 public interface IServiceCarrito {
 	

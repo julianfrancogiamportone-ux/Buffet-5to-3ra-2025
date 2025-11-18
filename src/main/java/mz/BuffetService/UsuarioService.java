@@ -1,11 +1,12 @@
-package mz.BuffetEscolar.service;
+package mz.BuffetService;
 
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import mz.BuffetEscolar.entity.Usuario;
-import mz.BuffetEscolar.repository.UsuarioRepository;
+import mz.BuffetEntity.Usuario;
+import mz.BuffetIService.IUsuarioService;
+import mz.BuffetRepository.UsuarioRepository;
 
 @Service
 public class UsuarioService implements IUsuarioService {
@@ -19,8 +20,8 @@ public class UsuarioService implements IUsuarioService {
     }
 
     @Override
-    public Usuario save(Usuario usuario) {
-        return repository.save(usuario);
+    public Usuario save(Usuario Usuario) {
+        return repository.save(Usuario);
     }
 
     @Override

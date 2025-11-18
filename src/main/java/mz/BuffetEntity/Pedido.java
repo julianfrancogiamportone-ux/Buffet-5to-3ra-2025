@@ -1,4 +1,4 @@
-package mz.BuffetEscolar.entity;
+package mz.BuffetEntity;
 
 import java.util.Date;
 import jakarta.persistence.Entity;

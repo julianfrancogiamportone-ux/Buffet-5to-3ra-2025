@@ -1,8 +1,8 @@
-package mz.BuffetEscolar.service;
+package mz.BuffetIService;
 
 import java.util.List;
 import java.util.Optional;
-import mz.BuffetEscolar.entity.Pedido;
+import mz.BuffetEntity.Pedido;
 
 public interface IPedidoService {
     

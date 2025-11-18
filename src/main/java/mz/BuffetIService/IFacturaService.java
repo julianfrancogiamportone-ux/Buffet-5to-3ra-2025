@@ -7,12 +7,7 @@ import mz.BuffetEntity.Factura;
 
 public interface IFacturaService {
     
-    Factura save1(Factura factura);
-    
-    List<Factura> findAll();
-    
-    Optional<Factura> findById(Long id);
-
-	mz.BuffetEntity.Factura save(mz.BuffetEntity.Factura factura);
-   
+    public List<Factura> findAll();
+    public Factura save(Factura factura);
+    public Optional<Factura>findById(Long id);
 }

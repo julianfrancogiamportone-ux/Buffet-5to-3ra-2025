@@ -1,8 +1,8 @@
 package mz.BuffetRepository;
 
-import mz.BuffetService.FacturaService;
+import mz.BuffetEntity.Factura;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface FacturaRepository extends JpaRepository<FacturaService, Long> {
+public interface FacturaRepository extends JpaRepository<Factura, Long> {
     
 }

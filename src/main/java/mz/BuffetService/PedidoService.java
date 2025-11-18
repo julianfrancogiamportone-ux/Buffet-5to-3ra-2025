@@ -1,11 +1,12 @@
-package mz.BuffetEscolar.service;
+package mz.BuffetService;
 
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import mz.BuffetEscolar.entity.Pedido;
-import mz.BuffetEscolar.repository.PedidoRepository;
+import mz.BuffetEntity.Pedido;
+import mz.BuffetIService.IPedidoService;
+import mz.BuffetRepository.PedidoRepository;
 
 @Service
 public class PedidoService implements IPedidoService {

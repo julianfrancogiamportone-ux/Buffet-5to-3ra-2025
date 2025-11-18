@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import mz.BuffetEntity.Factura;
 import mz.BuffetIService.IFacturaService;
-
 import java.util.List;
 import java.util.Optional;
 import mz.BuffetRepository.FacturaRepository;
@@ -16,8 +15,8 @@ public class FacturaService implements IFacturaService {
     private FacturaRepository repository;
 
     @Override
-    public Factura save(Factura Factura) {
-        return repository.save(Factura);
+    public Factura save(Factura factura) {
+        return repository.save(factura);
     }
 
     @Override
@@ -28,6 +27,5 @@ public class FacturaService implements IFacturaService {
     @Override
     public Optional<Factura> findById(Long id) {
         return repository.findById(id);
-        
     }
 }

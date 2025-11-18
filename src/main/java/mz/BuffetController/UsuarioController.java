@@ -1,4 +1,4 @@
-package mz.BuffetEscolar.controller;
+package mz.BuffetController;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import mz.BuffetEscolar.service.IUsuarioService;
-import mz.BuffetEscolar.entity.Usuario;
+import mz.BuffetIService.IUsuarioService;
+import mz.BuffetEntity.Usuario;
 
 @RestController
 @RequestMapping("/usuarios")

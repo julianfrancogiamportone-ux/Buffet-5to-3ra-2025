@@ -1,4 +1,6 @@
-package mz.BuffetEscolar.entity;
+package mz.BuffetEntity;
+
+
 
 
 import jakarta.persistence.Entity;
@@ -7,7 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToOne;
+
 
 @Entity
 
@@ -20,11 +22,11 @@ public class carrito {
 	private int subtotal;
 	@ManyToOne
 	@JoinColumn (name = "Producto_id")
-	private producto producto;
+	private Producto producto;
 	public carrito() {
 		super();
 	}
-	public carrito(int cantidad, int subtotal, mz.BuffetEscolar.entity.producto producto) {
+	public carrito(int cantidad, int subtotal, mz.BuffetEntity.Producto producto) {
 		super();
 		this.cantidad = cantidad;
 		this.subtotal = subtotal;
@@ -48,10 +50,10 @@ public class carrito {
 	public void setSubtotal(int subtotal) {
 		this.subtotal = subtotal;
 	}
-	public producto getProducto() {
+	public Producto getProducto() {
 		return producto;
 	}
-	public void setProducto(producto producto) {
+	public void setProducto(Producto producto) {
 		this.producto = producto;
 	}
 	

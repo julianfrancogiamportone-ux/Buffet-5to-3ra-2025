@@ -1,11 +1,11 @@
-package mz.BuffetEscolar.service;
+package mz.BuffetService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import mz.BuffetEscolar.Iservice.IServiceCarrito;
-import mz.BuffetEscolar.entity.carrito;
-import mz.BuffetEscolar.repository.CarritoRepository;
+import mz.BuffetIService.IServiceCarrito;
+import mz.BuffetEntity.carrito;
+import mz.BuffetRepository.CarritoRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -29,8 +29,6 @@ public class ServiceCarrito implements IServiceCarrito {
     @Override
     public Optional<carrito> findById(Long id) {
         return repository.findById(id);
-        
     }
-
    
 }

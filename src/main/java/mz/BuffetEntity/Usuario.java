@@ -1,4 +1,4 @@
-package mz.BuffetEscolar.entity;
+package mz.BuffetEntity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
