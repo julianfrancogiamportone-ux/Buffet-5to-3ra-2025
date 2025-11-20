@@ -5,12 +5,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 
 @Entity
-@Table(name = "pedidos")
 public class Pedido {
 
     @Id
@@ -22,13 +20,11 @@ public class Pedido {
 
     private double total;
 
-    // Campo para saber qué usuario hizo el pedido, sin necesitar la clase Usuario.
     private Integer idUsuario; 
 
     public Pedido() {
     }
 
-    // --- Getters y Setters ---
 
     public Integer getIdPedido() {
         return idPedido;

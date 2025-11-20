@@ -6,10 +6,10 @@ import java.util.Optional;
 
 public interface IProductoService {
     
-    Producto save(Producto producto);
+    public Producto save(Producto producto);
     
-    List<Producto> findAll();
+    public List<Producto> findAll();
     
-    Optional<Producto> findById(Long id);
+    public Optional<Producto> findById(Long id);
    
 }
